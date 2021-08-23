@@ -10,3 +10,17 @@
 
 * Для этого необходимо запустить файл по пути `bin\AmonicAirlines.exe`
 * Для авторизации используйте следующие данные: Администратор: `j.doe@amonic.com` `123`. Пользователь: `k.omar@amonic.com` `4258`
+
+## Демонстрация работы программы
+
+### Авторизация
+![alt text](res/images/login.png)
+
+### Окно администратора
+![alt text](res/images/admin.png)
+
+### Добавление нового пользователя
+![alt text](res/images/addUser.png)
+
+### Изменение роли пользователя
+![alt text](res/images/editRole.png)
