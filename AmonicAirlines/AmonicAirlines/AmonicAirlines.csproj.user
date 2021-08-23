@@ -18,6 +18,9 @@
     <Compile Update="EditRoleWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="LogoutReasonWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="UserWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -33,6 +36,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="Login.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LogoutReasonWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="UserWindow.xaml">

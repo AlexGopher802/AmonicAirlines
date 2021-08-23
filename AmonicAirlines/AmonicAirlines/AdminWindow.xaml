@@ -12,7 +12,7 @@
             <MenuItem x:Name="menuExit" Header="Exit" Click="menuExit_Click"/>
         </Menu>
 
-        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="160" Margin="10 30 0 0">
+        <Grid VerticalAlignment="Top" HorizontalAlignment="Left" Width="160" Margin="10 30 10 0">
             <TextBlock Text="Office:" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="14"/>
             <ComboBox x:Name="cbOffices" Width="110" Height="25" HorizontalAlignment="Right" VerticalAlignment="Center" TextBlock.FontSize="14" SelectionChanged="cbOffices_SelectionChanged"/>
         </Grid>
@@ -24,13 +24,6 @@
                     <Setter Property="Background" Value="{Binding RowColor}"/>
                 </Style>
             </DataGrid.RowStyle>
-            <!--<DataGridTextColumn Header="Id" Binding="{Binding Id}" Visibility="Collapsed"/>
-            <DataGridTextColumn Header="Name" Binding="{Binding Name}"/>
-            <DataGridTextColumn Header="Last name" Binding="{Binding LastName}"/>
-            <DataGridTextColumn Header="Age" Binding="{Binding Age}"/>
-            <DataGridTextColumn Header="Role" Binding="{Binding Role}"/>
-            <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
-            <DataGridTextColumn Header="Office" Binding="{Binding Office}"/>-->
 
         </DataGrid>
         <Grid VerticalAlignment="Bottom" Width="450" Margin="0 0 0 10">

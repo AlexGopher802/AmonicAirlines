@@ -94,3 +94,5 @@ D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\ne
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\net5.0-windows\ref\AmonicAirlines.dll
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\net5.0-windows\AmonicAirlines.pdb
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\net5.0-windows\AmonicAirlines.genruntimeconfig.cache
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\net5.0-windows\LogoutReasonWindow.g.cs
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Debug\net5.0-windows\LogoutReasonWindow.baml

@@ -267,3 +267,12 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
+create table tracking(
+	id int primary key auto_increment,
+    loginDateTime datetime not null,
+    logoutDateTime datetime null,
+    timeInSystem time null,
+    logoutReason nvarchar(100) null,
+    userId int not null,
+    foreign key (userId) references users (id)
+);

@@ -21,7 +21,7 @@ namespace AmonicAirlines.Models.Views
         {
             if (!active) return "#FF0000";
             if (roleId == "1") return "#90EE90";
-            return "#ffffff";
+            return "#FFFFFF";
         }
 
         public static int GetAge(DateTime birthday)

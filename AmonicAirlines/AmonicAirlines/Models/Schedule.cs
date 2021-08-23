@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AmonicAirlines.Models
+namespace AmonicAirlines
 {
     public partial class Schedule
     {

@@ -57,7 +57,11 @@ namespace AmonicAirlines
                 if(user.RoleId == 1)
                     new AdminWindow(this) { user = user }.Show();
                 else if(user.RoleId == 2)
-                    new UserWindow(this) { user = user }.Show();
+                {
+                    var lastLogin = _context.Trackings.Where(t => t.UserId == user.Id).OrderByDescending(t => t.Id).FirstOrDefault();
+                    if (lastLogin == null || lastLogin.LogoutDateTime.ToString() != "") new UserWindow(this) { user = user }.Show();
+                    else new LogoutReasonWindow(this) { lastLogin = lastLogin }.Show();
+                }
             }
             catch (Exception ex)
             {

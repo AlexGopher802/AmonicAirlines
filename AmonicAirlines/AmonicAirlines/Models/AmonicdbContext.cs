@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 
 #nullable disable
 
-namespace AmonicAirlines.Models
+namespace AmonicAirlines
 {
     public partial class AmonicdbContext : DbContext
     {
@@ -26,6 +26,7 @@ namespace AmonicAirlines.Models
         public virtual DbSet<Route> Routes { get; set; }
         public virtual DbSet<Schedule> Schedules { get; set; }
         public virtual DbSet<Ticket> Tickets { get; set; }
+        public virtual DbSet<Tracking> Trackings { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -336,6 +337,45 @@ namespace AmonicAirlines.Models
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Ticket_User");
+            });
+
+            modelBuilder.Entity<Tracking>(entity =>
+            {
+                entity.ToTable("tracking");
+
+                entity.HasIndex(e => e.UserId, "userId");
+
+                entity.Property(e => e.Id)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("id");
+
+                entity.Property(e => e.LoginDateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("loginDateTime");
+
+                entity.Property(e => e.LogoutDateTime)
+                    .HasColumnType("datetime")
+                    .HasColumnName("logoutDateTime");
+
+                entity.Property(e => e.LogoutReason)
+                    .HasMaxLength(100)
+                    .HasColumnName("logoutReason")
+                    .UseCollation("utf8_general_ci")
+                    .HasCharSet("utf8");
+
+                entity.Property(e => e.TimeInSystem)
+                    .HasColumnType("time")
+                    .HasColumnName("timeInSystem");
+
+                entity.Property(e => e.UserId)
+                    .HasColumnType("int(11)")
+                    .HasColumnName("userId");
+
+                entity.HasOne(d => d.User)
+                    .WithMany(p => p.Trackings)
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("tracking_ibfk_1");
             });
 
             modelBuilder.Entity<User>(entity =>

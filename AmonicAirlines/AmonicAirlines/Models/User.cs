@@ -3,13 +3,14 @@ using System.Collections.Generic;
 
 #nullable disable
 
-namespace AmonicAirlines.Models
+namespace AmonicAirlines
 {
     public partial class User
     {
         public User()
         {
             Tickets = new HashSet<Ticket>();
+            Trackings = new HashSet<Tracking>();
         }
 
         public int Id { get; set; }
@@ -25,5 +26,6 @@ namespace AmonicAirlines.Models
         public virtual Office Office { get; set; }
         public virtual Role Role { get; set; }
         public virtual ICollection<Ticket> Tickets { get; set; }
+        public virtual ICollection<Tracking> Trackings { get; set; }
     }
 }
