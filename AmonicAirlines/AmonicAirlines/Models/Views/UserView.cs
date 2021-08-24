@@ -15,8 +15,12 @@ namespace AmonicAirlines.Models.Views
         public string Role { get; set; }
         public string Email { get; set; }
         public string Office { get; set; }
-        public string RowColor { get; set; } = "#ffffff";
+        public string RowColor { get; set; }
+        public string TextColor { get; set; }
 
+        /// <summary>
+        /// Возвращает цвет строки в зависимости от роли и активности пользователя
+        /// </summary>
         public static string GetRowColor(string roleId, bool active)
         {
             if (!active) return "#FF0000";
@@ -24,6 +28,18 @@ namespace AmonicAirlines.Models.Views
             return "#FFFFFF";
         }
 
+        /// <summary>
+        /// Возвращает цвет текста в зависимости от роли и активности пользователя
+        /// </summary>
+        public static string GetTextColor(string rowColor)
+        {
+            if (rowColor == "#FF0000") return "#FFFFFF";
+            return "#000000";
+        }
+
+        /// <summary>
+        /// Возвращает возраст по дате рождения
+        /// </summary>
         public static int GetAge(DateTime birthday)
         {
             int age = DateTime.Today.Year - birthday.Year;

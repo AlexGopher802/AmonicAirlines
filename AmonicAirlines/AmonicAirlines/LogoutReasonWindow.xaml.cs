@@ -31,6 +31,9 @@ namespace AmonicAirlines
             this.parentWindow = parentWindow;
         }
 
+        /// <summary>
+        /// Переход к окну пользователя или окну авторизации
+        /// </summary>
         private void Window_Closed(object sender, EventArgs e)
         {
             if (!reasonWrited)
@@ -39,13 +42,18 @@ namespace AmonicAirlines
                 new UserWindow(parentWindow) { user = _context.Users.Where(u => u.Id == lastLogin.UserId).FirstOrDefault() }.Show();
         }
 
+        /// <summary>
+        /// Загрузка окна и вывод информации
+        /// </summary>
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             _context = new AmonicdbContext();
             tbInfo.Text = $"No logout detected for your last login on {lastLogin.LoginDateTime.ToString("MM.dd.yyyy")} ar {lastLogin.LoginDateTime.ToString("HH:mm")}";
-
         }
 
+        /// <summary>
+        /// Обновление записи в бд с добавлением причины краша
+        /// </summary>
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -66,6 +74,9 @@ namespace AmonicAirlines
             }
         }
 
+        /// <summary>
+        /// Валидация формы
+        /// </summary>
         private void validForm()
         {
             if (!rbSoftware.IsChecked.GetValueOrDefault() && !rbSystem.IsChecked.GetValueOrDefault()) throw new Exception("Select reason crash");

@@ -14,13 +14,19 @@
 ## Демонстрация работы программы
 
 ### Авторизация
-![alt text](res/images/login.png)
+![авторизация](res/images/login.png)
 
 ### Окно администратора
-![alt text](res/images/admin.png)
+![окно администратора](res/images/admin.png)
 
 ### Добавление нового пользователя
-![alt text](res/images/addUser.png)
+![добавление нового пользователя](res/images/addUser.png)
 
 ### Изменение роли пользователя
-![alt text](res/images/editRole.png)
+![изменение роли пользователя](res/images/editRole.png)
+
+### Окно пользователя
+![окно пользователя](res/images/user.png)
+
+### Окно некорректного выхода
+![окно некорректного выхода](res/images/logoutReason.png)

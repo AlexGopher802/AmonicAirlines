@@ -67,6 +67,7 @@ namespace AmonicAirlines
                               Id = user.Id,
                               Name = user.FirstName,
                               RowColor = UserView.GetRowColor(user.RoleId.ToString(), (bool)user.Active),
+                              TextColor = UserView.GetTextColor(UserView.GetRowColor(user.RoleId.ToString(), (bool)user.Active)),
                               LastName = user.LastName,
                               Age = UserView.GetAge((DateTime)user.Birthdate),
                               Role = role.Title,
@@ -77,6 +78,7 @@ namespace AmonicAirlines
             dataGridUsers.ItemsSource = result;
             dataGridUsers.Columns[0].Visibility = Visibility.Collapsed;
             dataGridUsers.Columns[7].Visibility = Visibility.Collapsed;
+            dataGridUsers.Columns[8].Visibility = Visibility.Collapsed;
         }
 
         /// <summary>
