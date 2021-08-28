@@ -9,6 +9,7 @@
     <Grid>
         <Menu VerticalAlignment="Top" FontSize="14">
             <MenuItem x:Name="menuExit" Header="Exit" Click="menuExit_Click"/>
+            <MenuItem x:Name="menuManageFlights" Header="Manage flights" Click="menuManageFlights_Click"/>
         </Menu>
 
         <Grid Margin="20 30 20 0" VerticalAlignment="Top">

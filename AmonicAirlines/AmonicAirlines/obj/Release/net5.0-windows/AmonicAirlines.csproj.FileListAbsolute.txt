@@ -48,3 +48,7 @@ D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\AmonicAirlines.genruntimeconfig.cache
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\LogoutReasonWindow.g.cs
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\LogoutReasonWindow.baml
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\EditScheduleWindow.g.cs
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\ManageFlightsWindow.g.cs
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\EditScheduleWindow.baml
+D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\obj\Release\net5.0-windows\ManageFlightsWindow.baml

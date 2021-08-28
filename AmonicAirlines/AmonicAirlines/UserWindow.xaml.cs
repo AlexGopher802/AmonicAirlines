@@ -131,5 +131,11 @@ namespace AmonicAirlines
         {
             this.Close();
         }
+
+        private void menuManageFlights_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            new ManageFlightsWindow(this).Show();
+        }
     }
 }

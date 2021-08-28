@@ -10,11 +10,11 @@ none
 false
 TRACE;RELEASE;NET;NET5_0;NETCOREAPP
 D:\Work\CSharpProjects\AmonicAirlines\AmonicAirlines\AmonicAirlines\App.xaml
-61719159330
+8-888342149
 
-24-1529412300
+27-1077296118
 207-1789557480
-AddUserWindow.xaml;AdminWindow.xaml;EditRoleWindow.xaml;Login.xaml;LogoutReasonWindow.xaml;UserWindow.xaml;
+AddUserWindow.xaml;AdminWindow.xaml;EditRoleWindow.xaml;EditScheduleWindow.xaml;Login.xaml;LogoutReasonWindow.xaml;ManageFlightsWindow.xaml;UserWindow.xaml;
 
 False
 
